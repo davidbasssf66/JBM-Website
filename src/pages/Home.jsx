@@ -11,7 +11,6 @@ import DemoSection from "../sections/DemoSection.jsx";
 import VideoModal from "../components/VideoModal.jsx";
 
 const MODAL_LABELS = {
-  overview: "Video placeholder — 2-minute product overview (Wistia embed)",
   "case-study": "Video placeholder — Beacon Trades Trust case study (Wistia embed)",
 };
 
@@ -20,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <Hero onOpenModal={setActiveModal} />
+      <Hero />
       <TrustBar />
       <Problems />
       <ProductTour />
