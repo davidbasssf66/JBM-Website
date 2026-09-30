@@ -58,9 +58,9 @@ export default function Hero() {
       />
 
       <div className="wrap relative z-10 py-24">
-        <div className="max-w-[46ch]">
+        <div className="max-w-[46ch] md:max-w-[62ch] lg:max-w-[72ch]">
           <div
-            className="font-mono text-[13.5px] tracking-[0.06em] text-white/75"
+            className="font-mono text-[14px] tracking-[0.08em] text-white/75 sm:text-[15px]"
             style={{ fontFamily: "'IBM Plex Mono', monospace" }}
           >
             TAFT-HARTLEY FUND ADMINISTRATION
@@ -75,28 +75,28 @@ export default function Hero() {
               transition={{ duration: 0.4, ease: "easeOut" }}
             >
               <h1
-                className="mt-4 text-[34px] leading-[1.15] font-bold sm:text-[44px]"
+                className="mt-5 text-[38px] leading-[1.18] font-bold sm:text-[52px] lg:text-[62px]"
                 style={{ fontFamily: "'Libre Franklin', sans-serif", letterSpacing: "-0.01em" }}
               >
                 {activeScene.headline}
               </h1>
-              <p className="mt-5 max-w-[40ch] text-[17px] text-white/85 sm:text-[18px]">
+              <p className="mt-6 max-w-[48ch] text-[18px] leading-[1.6] text-white/85 sm:text-[21px] lg:max-w-[56ch]">
                 {activeScene.subhead}
               </p>
             </motion.div>
           </AnimatePresence>
 
-          <div className="mt-9 flex flex-wrap gap-4">
-            <a href="#demo" className="btn btn-primary">Request a Demo</a>
+          <div className="mt-11 flex flex-wrap gap-5">
+            <a href="#demo" className="btn btn-primary btn-lg">Request a Demo</a>
             <a
               href="#platform"
-              className="btn btn-ghost-light"
+              className="btn btn-ghost-light btn-lg"
             >
               Explore the Platform
             </a>
           </div>
 
-          <div className="mt-8 flex gap-2" role="tablist" aria-label="Hero scene selector">
+          <div className="mt-10 flex gap-2" role="tablist" aria-label="Hero scene selector">
             {SCENES.map((scene, index) => (
               <button
                 key={scene.id}
